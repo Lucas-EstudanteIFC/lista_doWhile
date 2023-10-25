@@ -6,10 +6,15 @@
     */
 
     //Entrada
-
+    let nome = prompt(`Qual seu nome?`).trim();
+    let senha = prompt(`Qual a sua senha?`).trim();
 
     //Processamento
-
+    while (nome == senha) {
+        alert(`Erro, informe novamente.`);
+        nome = prompt(`Qual seu nome?`).trim();
+        senha = prompt(`Qual a sua senha?`).trim();
+    }
 
     //Saída
 

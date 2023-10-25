@@ -6,11 +6,17 @@
     */
 
     //Entrada
-
+    let populacaoA = 80000;
+    let populacaoB = 200000;
+    let anos = 0;
 
     //Processamento
-
+    while (populacaoA <= populacaoB) {
+        populacaoA*1.03;
+        populacaoB*1.015;
+        anos++;
+    }
 
     //Saída
-
+    document.write(`Serão necessários ${anos} para o país A se equiparar ao país B.`);
 </script>

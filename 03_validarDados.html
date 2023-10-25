@@ -11,10 +11,20 @@
     */
 
     //Entrada
+    let nome = "";
+    let idade = 0;
+    let salario = 0;
+    let sexo = "";
+    let estadoC = "";
 
-
+    do { nome = prompt(`Qual o seu nome?`).trim();
+    idade = parseInt(prompt(`Quantos anos tem?`).trim());
+    salario = parseFloat(prompt(`Qual o seu salário?`).replace(",", ".").trim());
+    sexo = prompt(`Qual o seu sexo?`).trim().toLowerCase();
+    estadoC = prompt(`Qual o seu estado civil? \n S-Solteiro(a) | C-Casado(a) | V-Viúvo(a) | D-Divorciado(a)`).trim().toLowerCase();
+    } while (nome.length < 3 || idade < 0 || idade > 150 || salario < 0 || sexo != "f" || sexo != "m" || estadoC != "s" || estadoC != "c" || estadoC != "v" || estadoC != "d") 
+   
     //Processamento
-
 
     //Saída
 

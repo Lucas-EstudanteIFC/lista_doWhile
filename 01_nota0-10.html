@@ -6,10 +6,14 @@
     */
 
     //Entrada
-
+    let nota = parseFloat(prompt(`Qual foi sua nota, de 0 à 10?`).trim().replace(",", "."));
 
     //Processamento
-
+    while (nota < 0 || nota > 10) {
+        alert(`Erro. Informe novamente.`);
+        nota = parseFloat(prompt(`Qual foi sua nota, de 0 à 10?`).trim().replace(",", "."));   
+    }
+    
 
     //Saída
 
