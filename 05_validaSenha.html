@@ -6,11 +6,22 @@
     */
 
     //Entrada
-    let senha = 
-
+    let senha = "";
+    let verificacao = "";
+    do {
+        senha = parseInt(prompt(`Informe uma senha com 4 números inteiros.`).trim());
+        
+    } while (senha.length != 4 || isNaN(senha));
+    verificacao = senha;
     //Processamento
 
-
     //Saída
-
+    while (senha != verificacao) {
+        senha = parseInt(prompt(`Informe uma senha com 4 números inteiros.`).trim());
+        if (senha == verificacao) {
+            alert(`Senha Correta.`);
+        } else {
+            alert(`Senha incorreta.`);
+        }
+    }
 </script>
